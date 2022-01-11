@@ -1,0 +1,123 @@
+body {
+  background-color: #b5c588;
+  color: #184558;
+}
+
+blockquote {
+  margin: 0;
+}
+
+blockquote p {
+  padding: 15px;
+  background: #eeeeee;
+  border-radius: 5px;
+  line-height: 1.6;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+blockquote p::before {
+  content: '\201C';
+}
+
+blockquote p::after {
+  content: '\201D';
+}
+img {
+  margin-left: 10em;
+}
+.maintable td {
+  vertical-align: top;
+}
+
+.Months-table {
+  border-collapse: collapse; /*sets whether cells inside a <table> have shared or separate borders.*/
+  margin: 25px 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); /* offset-x | offset-y | blur-radius | rgba(red, green, blue, alpha) */
+  margin-left: 25em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Months-table thead tr {
+  background-color: #009879;
+  color: #ffffff;
+  text-align: left;
+}
+
+.Months-table th,
+.Months-table td {
+  padding: 12px 15px;
+}
+
+/* .Months-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+} */
+
+.Months-table tbody tr:nth-of-type(even) { 
+    /* or you can use if you like easier .Months-table tbody tr.diff-row */
+  background-color: #f3f3f3;
+}
+/*give nice border to the bottom of the table gives small 3d feeling for the eye with the help of shadows and other borders*/
+.Months-table tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+
+.Months-table tbody tr.diff-row{
+  font-weight: bold;
+  color: #009879;
+}
+
+.button {
+  margin-left: 20px;
+  width: 80px;
+  height: 30px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  font-weight: 700;
+  color: #313133;
+  /* background: #009879; */
+  background: linear-gradient(
+    90deg,
+    rgba(129, 230, 217, 1) 0%,
+    rgba(0, 152, 121, 1) 100%
+  );
+  border: none;
+  border-radius: 1000px;
+  box-shadow: 12px 12px 24px rgba(0, 152, 121, 0.64);/* offset-x | offset-y | blur-radius | rgba(red, green, blue, alpha) */
+  transition: all 0.3s ease-in-out 0s; /* Apply to all changed properties */
+  cursor: pointer;
+  outline: none; /* we need it to take away the out line boder in case of button focusing */
+  position: relative;
+  padding: 10px;
+}
+
+button::before {
+  content: '';
+  border-radius: 1000px;
+  width: 90px;
+  height: 40px;
+  border: 2px solid #009879;
+  box-shadow: 0 0 60px rgba(0, 152, 121, 0.64);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);/*The transform CSS property lets you rotate, scale, skew, or translate an element. It modifies the coordinate space of the CSS visual formatting model.*/
+  opacity: 0;
+  transition: all 0.3s ease-in-out 0s; /*Transitions enable you to define the transition between two states of an element. Different states may be defined using pseudo-classes like :hover or :active*/
+}
+
+.button:hover,
+.button:focus {
+  color: #313133;
+  transform: translateY(-2px);
+}
+
+button:hover::before,
+button:focus::before {
+  opacity: 1;
+}

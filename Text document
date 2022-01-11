@@ -1,0 +1,28 @@
+It depends on how precise you want it.
+
+At the level of the year, a rough first order translation is:
+Gregorian = 622 + Hijri * 354/365.25
+
+Then you can refine that further if you want to convert day-month-year, using 1st Muharram 1 A.H. = July 16, 622 to calibrate, as well as the fact that on average, one hijri month is 29.5 days and one hijri year is about 354 days.
+354.3 days to be precise.
+
+One approach I can think of is this:
+First, convert the Gregorian date of 1 Muharram 1 A.H. into a float in terms of Gregorian years.
+So that would mean 1 Muharram 1 A.H. would be:
+622+6/12+16/365 = 622.54 years Gregorian
+
+Then you could look at the Hijri date, and calculate how many Hijri years after 1 Muharram 1 A.H. have elapsed.
+For example, today is 4 Dhul Qadah (month 11) 1436.
+So that would give (1436-1)+(11-1)/12+(4-1)/354.3 = 1435.84 years Hijri.
+
+Then you could convert this second figure to Gregorian years elapsed.
+1435.84 * 354.3/365.24 = 1392.83
+
+Then you add the Gregorian years elapsed to the year of the start in Gregorian. Which gives 622.54+1392.83 = 2015.37
+
+Which is off by a bit. That would be sometime in mid May, 2015.
+
+I guess once you got that calibrated properly, you could convert the decimal of the elapsed part of the current year into months and days.
+For example, .37 years is 4.44 months, which means April has passed, it's May, and then .44 of a month is about 13 days, so May 13th.
+
+But like I said some calibration and careful attention to rounding errors is important

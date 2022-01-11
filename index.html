@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DCI_Proj</title>
+    <link rel="icon" href="./AAU_Hijri_Calendar_Creator.jpg">
+    <link rel="stylesheet" href="./style.css" />
+    <script src="ecmas.js" defer></script>
+  </head>
+  <body>
+    <h1>Your Birthday in Hijri/Islamic calender</h1>
+
+    <img src="./arabic-calligraphy-allah-vector-32578681-removebg-preview.png" style="float: right; margin-top: -50px; width: 200px;" alt="arabic-calligraphy-allah-">
+
+    <p>Please give your birthday date</p>
+    <input type="date" data-date-inline-picker="true" id="dateInput" />
+
+    <button type="button" id="butToGiveBirthDate" class="button" >submit</button>
+
+    <p id="demo" style="font-weight: 600; color: brown; font-size: 2em"></p>
+    
+    <h2>Let us read some useful Information!</h2>
+    <blockquote cite="https://jostrans.org/issue17/art_darani.php">
+      <p>
+        Hijri calendar, which is based on lunar movement in the solar system,
+        involves changes that are difficult to track. Any good translation must
+        thus take into account the need to convert dates between different
+        calendars. It is necessary to know how to convert solar dates into the
+        Gregorian calendar and vice versa. This requires a full understanding of
+        the Gregorian, solar and lunar months including how many days each
+        contains, what a leap year is, and so on.
+      </p>
+    </blockquote>
+    <h2>Calendars</h2>
+    <table class="maintable">
+      <thead>
+        <tr>
+          <th>* The Gregorian calendar</th>
+          <th>* The Lunar calendar</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <blockquote cite="https://jostrans.org/issue17/art_darani.php">
+              <p>
+                The Gregorian calendar was proclaimed by
+                <b>Pope Gregory XIII</b> and came into effect in most Catholic
+                states
+                <b
+                  >in 1582. October 4, 1582 of the Julian calendar was followed
+                  by October 15 in the new calendar,</b
+                >in 1582. October 4, 1582 of the Julian calendar was followed by
+                October 15 in the new calendar, correcting the accumulated
+                discrepancy between the Julian calendar and the equinox from
+                that date. When comparing historical dates, it is important to
+                note that the Gregorian calendar used universally today in
+                Western countries and in international commerce was adopted at
+                different times by different countries. Britain and her colonies
+                (including what is now the United States), did not switch to the
+                Gregorian calendar until 1752, when Wednesday 2nd September in
+                the Julian calendar dawned as Thursday the 14th of September in
+                the Gregorian.
+              </p>
+            </blockquote>
+
+            <table class="Months-table">
+              <thead>
+                <tr>
+                  <th>Month</th>
+                  <th>Days</th>
+                  <th>Month</th>
+                  <th>Days</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1.January</td>
+                  <td>31</td>
+                  <td>7.July</td>
+                  <td>31</td>
+                </tr>
+                <tr class="diff-row">
+                  <td>2.February</td>
+                  <td>28</td>
+                  <td>8.August</td>
+                  <td>31</td>
+                </tr>
+                <tr>
+                  <td>3.March</td>
+                  <td>31</td>
+                  <td>9.September</td>
+                  <td>30</td>
+                </tr>
+                <tr class="diff-row">
+                  <td>4.April</td>
+                  <td>30</td>
+                  <td>10.October</td>
+                  <td>31</td>
+                </tr>
+                <tr>
+                  <td>5.May</td>
+                  <td>31</td>
+                  <td>11.November</td>
+                  <td>30</td>
+                </tr>
+                <tr class="diff-row">
+                  <td>6.June</td>
+                  <td>30</td>
+                  <td>12.December</td>
+                  <td>31</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <blockquote cite="https://jostrans.org/issue17/art_darani.php">
+              <p>
+                <b
+                  >February, the shortest month in the Gregorian calendar, is 28
+                  or 29 days</b
+                >depending on whether it occurs in a <b>leap year</b> or not.
+                The Gregorian calendar offers a minor correction to the Julian.
+                In the Julian calendar, <b>every fourth year</b> is a leap year
+                in which February has 29 rather than 28 days, but in the
+                Gregorian calendar, years <b>divisible by 100</b> are not leap
+                years unless they are also <b>divisible by 400.</b> As in the
+                Julian calendar, days are considered to
+                <b>begin at midnight.</b> The average length of a year in the
+                Gregorian calendar is 365.2425 days compared with the actual
+                solar tropical year (time from equinox to equinox) of
+                <b>365.24219878 days</b>, so the calendar
+                <b
+                  >accumulates one day of error with respect to the solar year
+                  about every 3300 years.</b
+                >
+                As this is a purely solar calendar, no attempt is made to
+                synchronise the start of months to the phases of the Moon. While
+                one cannot properly speak of ‘Gregorian dates’ prior to the
+                adoption of the calendar in 1582, the calendar can be
+                extrapolated to prior dates. When this is done, a convention is
+                applied that the year prior to year 1 is year 0. This differs
+                from the Julian calendar in which there is no year 0—the year
+                before year 1 in the Julian calendar is year ?1(minus 1).
+                <b
+                  >The date December 30th in the Gregorian calendar corresponds
+                  to January 1st in the Julian calendar.</b
+                >
+                A slight modification of the Gregorian calendar
+                <b>would make it even more precise.</b> If the additional rule
+                that years evenly divisible by 400 are not leap years is given
+                effect, an average solar year of 365.24225 days per year is
+                obtained, which, compared to the actual mean year of
+                365.24219878,
+                <b
+                  >is equivalent to an error of one day over a period of about
+                  19,500 years;</b
+                >
+                this is comparable to errors resulting from tidal braking of the
+                rotation of the Earth.
+              </p>
+            </blockquote>
+          </td>
+          <td>
+            <blockquote cite="https://jostrans.org/issue17/art_darani.php">
+              <p>
+                The lunar calendar (also known as the Islamic,<b
+                  >Muslim and Hijri calendar</b
+                >) is purely lunar and consists of twelve alternating
+                <b>months of 30 and 29 days,</b>with the
+                <b
+                  >final 29-day month extending to 30 days during leap years.</b
+                >
+                Leap years follow a 30-year cycle and occur in years 1, 5, 7,
+                10, 13, 16, 18, 21, 24, 26, and 29.<b
+                  >Days are considered to begin at sunset.</b
+                >
+                The calendar begins on <b>Friday,July 19th, 622 C.E.</b> in the
+                Julian calendar, <b>Julian day 1948439.5,</b> the day of
+                <b>Prophet Muhammad's PBUH migration from Mecca to Medina,</b>
+                with sunset on the preceding day reckoned as the first day of
+                the first month of year <b>1 A.H.</b>, (Hegira, the Arabic word
+                for Peregrination) The days are named in accordance with their
+                position in the week; thus : Sunday is the first day (Ahad in
+                Arabic means the one) , Monady (Iethnayn in Arabic means the the
+                two )....etc but Friday the 6th (Jumaah means the gathering,
+                meeting togther), and Saturday the 7th (Assabtt means in arabic
+                the /sleep, coma, sopor, rest/ which is clear coming from the
+                Jewish meaning of this day the day of rest), add to that, the
+                week is considered to begin on Saturday as Friday is the holiday
+                for Muslims
+              </p>
+            </blockquote>
+            <table class="Months-table">
+              <thead>
+                <tr>
+                  <th>Month</th>
+                  <th>Days</th>
+                  <th>Month</th>
+                  <th>Days</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1.Muharram</td>
+                  <td>29/30</td>
+                  <td>7.Rajab</td>
+                  <td>29/30</td>
+                </tr>
+                <tr class="diff-row">
+                  <td>2.Safar</td>
+                  <td>29/30</td>
+                  <td>8.Shaban</td>
+                  <td>29/30</td>
+                </tr>
+                <tr>
+                  <td>3.Rabi al-Awwal</td>
+                  <td>29/30</td>
+                  <td>9.Ramadan</td>
+                  <td>29/30</td>
+                </tr>
+                <tr class="diff-row">
+                  <td>4.Rabi ath-Thani</td>
+                  <td>29/30</td>
+                  <td>10.Shawwal</td>
+                  <td>29/30</td>
+                </tr>
+                <tr>
+                  <td>5.Jumad al-Ula</td>
+                  <td>29/30</td>
+                  <td>11.Dhul-Qada</td>
+                  <td>29/30</td>
+                </tr>
+                <tr class="diff-row">
+                  <td>6.Jumad al-Thani</td>
+                  <td>29/30</td>
+                  <td>12.Dhul-Hijja</td>
+                  <td>29/30</td>
+                </tr>
+              </tbody>
+            </table>
+            <blockquote cite="https://jostrans.org/issue17/art_darani.php">
+              <p>
+                The calendar presented here is the most commonly used civil
+                calendar in the Islamic world; <b>for religious purposes</b>,
+                months are marked to start with the first observation of
+                <b>the crescent of the new Moon.</b> As a result of this, the
+                same Gregorian date may have <b>two to four</b> Hijri equivalent
+                dates depending on the place and time of the
+                <b>crescent sighting.</b> As an attempt to rationalise the
+                various systems in use at that time, it was agreed that the most
+                appropriate reference point for the Islamic Calendar was the
+                Hijra (Hijrah, Hegira). The Islamic (Hijri) Calendar -with dates
+                that fall within the Muslim Era- is usually
+                <b>abbreviated to AH</b> in Western languages from the Latinised
+                <b>'Anno Hejirae' (meaning ‘in the year of the Hijra’)</b>.
+              </p>
+            </blockquote>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <blockquote><p>For more information about Hijri calender and date <a href="https://en.wikipedia.org/wiki/Hijri_year">Hijri year wikipedia</a></p></blockquote>
+
+    <ul>
+      <li>
+        please note that I assume in my calculation that Hijri year is 354.366
+        to be precise as much as I can
+      </li>
+      <li>
+        the Hijr Year starts at **July,19,622 AD** which is equelivant to
+        **Friday 01/01/1 AH (Friday 01 Muharam 1 Hijri year)**
+      </li>
+      <li>
+        The program need to take care for some special dates and points to be
+        accurate , but this I will do later, but the program can still give you
+        the nearest date to 99% right.
+      </li>
+      <li>
+        I need to care for the month later if the date was between 29 and 30 and
+        that needs some calculation and I was not in good mood to do it today ,
+        so I will make it later
+      </li>
+    </ul>
+
+    <blockquote>
+      <p>
+        <img
+          src="./114-1141759_copyleft-symbol-frowny-face-play-icon-svg.png"
+          style="width: 20px; margin: 0; padding: 0; float: left"
+          alt=""
+        />
+        Mohamed Salim Al-Barry 13-Oct-2021 JS beginers project for DCI
+        assessment under the care of Mr.Gerhard Nuffer
+      </p>
+    </blockquote>
+  </body>
+</html>
